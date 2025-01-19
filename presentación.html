@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio maday</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.hobby/estilo.css">
+    <style>
+        body  main {
+            margin-top: 56px; /* Ajusta este valor según la altura de tu barra de navegación */
+        }
+        #carouselExampleControls img {
+            width: 200px;
+            height: 200px; /* Tamaño cuadrado para las imágenes del carrusel */
+            object-fit: cover; /* Ajusta las imágenes sin distorsión */
+        }
+
+        main .col-md-6 {
+            margin-bottom: 20px; /* Espaciado entre columnas */
+        }
+            
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="portafolio.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="presentación.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://madaygutierrezherrmientashtml.my.canva.site/" target="_blank">Act 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://madaygutierrez.github.io/Act-2a/" target="_blank">Act 2a</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://madaygutierrez.github.io/portafolio/" target="_blank">Act 2b</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://madaygutierrez.github.io/potafolioact3/" target="_blank">Act 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://madaygutierrez.github.io/Actividad-5/" target="_blank">Act 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Act 6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Auto-evaluación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Proyecto final</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!-- Barra lateral -->
+            <aside id="mySidebar" class="col-md-3 bg-light">
+                <div class="p-3">
+                    <h2>Sobre mí</h2>
+                    <strong>Datos:</strong> <ol>Nombre: Gabriela Maday Gutiérrez Domínguez</ol> <ol>Matricula:S22010312</ol> <ol>Carrera: Admón. en Negocios Internacionales</ol> <ol>Experiencia educativa: Proyecto web</ol>
+                    <p style="text-align: justify;"><strong>¿Por qué decidí cursar esta experiencia educativa en intersemestral?</strong> A pesar de que el curso forma parte de mi plan de estudios regular, quise aprovechar la oportunidad de adquirir experiencia práctica en desarrollo web. Considero que trabajar en proyectos reales me ayudará a consolidar los conocimientos teóricos adquiridos en clase.</p>
+                </div>
+            </aside>
+
+            <!-- Contenido principal -->
+            <main class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <section id="cine-cultura">
+                            <h2>Temas abordados</h2>
+                            <p style="text-align: justify;">
+                                A través de proyectos prácticos, aplicamos los conocimientos adquiridos en HTML, CSS y Bootstrap. Diseñamos y desarrollamos páginas web funcionales, implementando tablas y otros elementos interactivos. También exploramos diferentes opciones de hosting para desplegar nuestros proyectos en línea.
+                            </p>
+                        </section>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2>¿Qué espero de la materia?</h2>
+                        <p style="text-align: justify;">
+                            Espero que los conocimientos adquiridos en este curso me permitan desarrollar habilidades como la resolución de problemas y la creatividad. Además, creo que esta experiencia me será útil para diseñar estrategias de marketing digital más efectivas.
+                        </p>
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img.hobby/descarga.jpeg" class="d-block mx-auto" alt="HTML">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img.hobby/descarga (1).jpeg" class="d-block mx-auto" alt="CSS">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img.hobby/OIP.jpeg" class="d-block mx-auto" alt="Bootstrap">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+   
+   <!-- Pie de página -->
+   <footer class="footer">
+    <p>&copy;20/01/25 Gabriela Maday Gutiérrez Domínguez. </p>
+   
+</footer>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html> 
