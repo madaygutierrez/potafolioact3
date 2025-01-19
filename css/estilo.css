@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    background-color: antiquewhite;
+        height: 100%; /* Asegura que el HTML y el body abarquen toda la ventana */
+        margin: 0; /* Elimina márgenes por defecto */
+        display: flex;
+        flex-direction: column; /* Para que los hijos se alineen en columna */
+}
+.container-fluid {
+    flex: 1; /* Ocupa el espacio restante entre el encabezado y el pie de página */
+}
+/* Navbar Styles */
+.navbar {
+    background-color: #5a3e2b; /* Coffee color */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: rgb(195, 169, 75);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #caac8f; /* Light beige hover effect */
+    border-radius: 5px;
+}
+
+/* Estilo para la barra lateral */
+#mySidebar {
+    background-color: #dcb87a !important; /* Color café, usando !important para sobrescribir Bootstrap */
+    color: #000000; /* Texto negro para contraste */
+    padding: 15px;
+    border-right: 2px solid #cda07f; /* Borde opcional */
+    margin-top: auto; /* Empuja hacia abajo la barra lateral */
+    grid-row: 2;
+    min-height: calc(100vh - 56px); /* Calcula la altura menos la barra de navegación (56px es el alto estándar de Bootstrap) */
+    }
+
+
+/* Content Styles */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #5a3e2b; /* Coffee color for text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+  /* Pie de página */
+  .footer {
+    background-color:#cba769;
+    color: #0e072b;;
+    color:#0e072b;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Empuja el pie de página hacia abajo */
+    grid-row: 2;
+    text-align: center; /* Centra el contenido del pie de página */
+}
+main .row { 
+    margin-top: 56px; /* Ajusta este valor según la altura de tu barra de navegación */
+}
+main .col-md-6 {
+    flex: 0 0 50%; /* Las columnas ocuparán el 40% del ancho disponible */
+    max-width: 50%; /* Limita el ancho máximo */
+}
+  
