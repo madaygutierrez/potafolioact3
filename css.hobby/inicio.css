@@ -1,0 +1,53 @@
+body {
+    background-image: url('https://wallpaperaccess.com/full/3695775.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.content {
+    color: #5a3e2b; /* Coffee color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+/* Navbar Styles */
+.navbar {
+    background-color: #5a3e2b; /* Coffee color */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: rgb(195, 169, 75);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #bea892; /* Light beige hover effect */
+    border-radius: 5px;
+}
